@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's build</title>
+  <link rel="icon" type="image/png" href="img/logo/logo_nobg.png" />
+
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/gallery.css
+  " rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header design-->
+  <header>
+    <a class="logo" href="#"><img src="img/logo/logo_nobg.png" /></a>
+    <ul class="navlist">
+      <li><a href="#acasa" class="active">Acasa</a></li>
+      <li><a href="#despre">Despre</a></li>
+      <li><a href="#servicii">Servicii</a></li>
+      <li><a href="#portofoliu">Portofoliu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon">
+
+    </div>
+  </header>
+  <!-- sectiunea de acasa design-->
+  <!-- <section class="acasa" id="acasa"> -->
+  <!-- <div class="acasa-text">
+      <div class="slide">
+        <span class="one">Hello</span>
+        <span class="two">I'm</span>
+      </div>
+      <h1>Mustakim</h1>
+      <h3>UI/Ux<span>Design</span></h3>
+      <p>Web devop</p>
+      <div class="button">
+        <a href="#" class="btn">Say Hello</a>
+        <a href="#" class="btn2"><span><i class='bx bx-play'></i>Watch</span>></a>
+      </div>
+    </div> -->
+  <!-- </section> -->
+  <section class="acasa" id="acasa">
+
+  </section>
+  <div class="display-title">CONSTUCȚII CIVILE</div>
+
+  <!--sectiunea despre mine design-->
+  <section class="despre" id="despre">
+    <div class="despre-img">
+      <a href="img/me.jpg" data-lightbox="mygallery">
+        <img id="myImg" src="img/me.jpg" alt="me"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" />
+      </a>
+    </div>
+    <div class="despre-text">
+      <h2>Despre <span>Mine</span></h2>
+      <h4>Pasionat de consrucții civile</h4>
+      <p>Pasiunea pentru constucții civile mi-am descoperit-o încă din clasa a 8-a, având vârsta de 15 ani, când am mers
+        pentru prima dată împreună cu tatăl meu să construim o casă de la 0, aflată în județul Arad. M-a pasionat
+        procesul de construcție, care începe cu fundația, care trebuie să fie foarte bine făcută, după care urmează
+        zidăria, care presupune zidirea cu cărămidă/bolțari/bca. Următoarea etapă este construirea acoperișului, care
+        reprezită ultima parte importantă din construirea unei clădiri, urmând apoi finisajul și interioarele. După
+        prima lucrare, au mai urmat și altele, la care am fost extrem de bucuros să particip și să mă bucur de rodul
+        muncii (remunerația primită).<br>
+        <span id="more" style="display: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mă bucură de fiecare dată când, la finalul
+          lucrării, gazda a fost
+          mulțumită de rezultat și se vede
+          bucuria pe față ei, acest lucru mă încurajează, deoarece mi-am dat seama că pot contribui la bucuria celor din
+          jur, ajutând să își împlinească un vis în construirea casei.</span>
+      </p>
+      <button onclick="showMore()" id="moreBtn" class="btn">Mai mult...</button>
+    </div>
+  </section>
+
+  <!--sectiunea despre servicii design-->
+  <section class="servicii" id="servicii">
+    <div class="main-text">
+      <p>La ce sunt eu expert</p>
+      <h2><span>Serviciile </span>Mele</h2>
+    </div>
+    <div class="servicii-content">
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bx-hard-hat'></i>
+        </div>
+        <h3>Construirea și gestionarea lucrărilor de construcție:</h3>
+        <p>Constructorii pot fi responsabili de construirea și gestionarea lucrărilor de construcție, inclusiv de
+          gestionarea bugetului, a resurselor și a muncitorilor.
+          <span id="readmore1" style="display: none;">Aceștia pot colabora cu arhitecți, ingineri și alte persoane
+            implicate în proiectul de construcție pentru a asigura că lucrările sunt finalizate în timp și în
+            buget.</span>
+        </p>
+        <button onclick="toggleReadMore('readmore1', this)" class="read">Citește mai mult...</button>
+      </div>
+
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bx-cog'></i>
+        </div>
+        <h3>Instalarea și configurarea sistemelor:</h3>
+        <p>Constructorii pot fi responsabili pentru instalarea și configurarea sistemelor de alimentare cu apă,
+          canalizare, electricitate și încălzire, ventilare și aer condiționat (HVAC) în clădirea în construcție.
+          <span id="readmore2" style="display: none;">Acest lucru poate implica colaborarea cu furnizorii de servicii
+            specializate pentru a asigura că sistemele sunt instalate și configurate corespunzător.</span>
+        </p>
+        <button onclick="toggleReadMore('readmore2', this)" class="read">Citește mai mult...</button>
+      </div>
+
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bx-clipboard'></i>
+        </div>
+        <h3>Asigurarea conformității cu normele și regulamentele:</h3>
+        <p>Constructorii trebuie să fie familiarizați cu normele și regulamentele de construcție locale, precum și cu
+          codurile de siguranță și de mediu, pentru a se asigura că lucrările
+          <span id="readmore3" style="display: none;">de construcție sunt efectuate conform standardelor și că clădirea
+            finală este sigură și în conformitate cu reglementările. Aceștia pot colabora cu inspectorii de construcție
+            și
+            cu alte autorități locale pentru a asigura respectarea normelor și a reglementărilor.</span>
+        </p>
+        <button onclick="toggleReadMore('readmore3', this)" class="read">Citește mai mult...</button>
+      </div>
+
+    </div>
+  </section>
+  <!--sectiunea portofoliu design-->
+  <section class="portofoliu" id="portofoliu">
+    <div class="main-text">
+      <p>Portofoliu</p>
+      <h2><span>Ultimele </span>proiecte</h2>
+    </div>
+
+    <div class="portofoliu-content">
+
+      <div class="row">
+        <img src="img/portfoliu/foto01.jpg" alt="foto01"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Construcție - 3 nivele, Lipova, Arad </h5>
+          <h4>î. 15.05.2021</h4>
+          <p>S-a folosit BCA, construcția casei, s-a realizat în aproximativ 1 an.</p>
+          <a href="#servicii" onclick="openModal('myModal1')" class="gal-hover-shadow gal-cursor"><i class='bx bx-images'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfoliu/foto02.jpg" alt="foto02"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Construcție - 2 nivele, Bata, Arad</h5>
+          <h4>î. 10.10.2020</h4>
+          <p>S-a folosit bolțari, construcția casei a durat 6 luni până la finalizare.</p>
+          <a href="#"><i class='bx bx-images'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfoliu/foto03.jpg" alt="foto03"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Construcție - 1 nivel (parter), Mândruloc, Arad</h5>
+          <h4>î. 02.04.2022</h4>
+          <p>Este o construcție modestă, suprafața fiind de 200m<sup>2</sup>, s-au folosit BCA, a durat 4 luni până la
+            finalizare.
+          </p>
+          <a href="#"><i class='bx bx-images'></i></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfoliu/foto04.jpg" alt="foto04"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Construcție - 2 nivele (parter + mansardă), Arad</h5>
+          <h4>î. 15.07.2019</h4>
+          <p>Această construcție este din bolțari și a durat în jur de 5 luni până la finalizare.</p>
+          <a href="#"><i class='bx bx-images'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfoliu/foto05.jpg" alt="foto05"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Cosntruție + interior - Frumușeni, Arad</h5>
+          <h4>î. 2023</h4>
+          <p>Unul dintre multele interioare realizate, un interior cu stil, fiind folosite materiale de primă mână.</p>
+          <a href="#"><i class='bx bx-images'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfoliu/foto06.jpg" alt="foto06"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="layer">
+          <h5>Bucătărie modestă - Păuliș, Arad</h5>
+          <h4>î. 2023</h4>
+          <p>Aceasta bucătărie modestă, aflată într-o casă cu două nivele, a fost realizată în 3 săptămâni.</p>
+          <a href="#"><i class='bx bx-images'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/k6LtY22ghOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+  </section>
+
+  <!--sectiunea contact design-->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contactează-<span>Mă!</span></h2>
+      <h4>Dacă dorești o construcție</h4>
+      <p>Pasionat de consrucții civile și dorința de a vedea lucrarea finalizată, doresc să te ajut să-ți construiesc
+        casa împreună cu echipa "Let's Build".
+        <!-- </p>
+      <p> -->
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firma "Let's Build" este o firmă de execuție, care ridică clădiri de
+        la fundație, până la acoperiș și finisaje
+        (interior/exterior).
+      </p>
+      <div class="sth">
+        <div class="list">
+          <br>
+          <li>
+            <a href="https://wa.me/400752668055?text=As%20dori%20sa%20fac%20o%20progrmare%20Constructie"
+              target="_blank"><i class='bx bxl-whatsapp'></i>&nbsp;&nbsp;0752668055</a>
+          </li>
+          <li>
+            <a href="mailto:pm8470403@gmail.com?subject=Programare%20constructie&body=%0D%0A%0D%0AAs%20dori%20sa%20fac%20o%20progrmare%20Constructie%0D%0A%0D%0A%0D%0A%0D%0A"
+              target="_blank"><i class='bx bxs-envelope'></i>&nbsp;&nbsp;pm8470403@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/kXtBxPEqPtvPg5wh9" target="_blank"><i
+                class='bx bxs-map'></i>&nbsp;&nbsp;Cladova, Arad, România</a>
+          </li>
+          <li>
+            <a href="#"><i class='bx bxs-like'></i>&nbsp;&nbsp;Like Share & Subscribe</a>
+            <!-- <br><br> -->
+          </li>
+          <!-- <li>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d345.5888351906389!2d21.652795602762815!3d46.136592701437124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1682022252635!5m2!1sen!2sro"
+              width="100%" height="150" style="border:0; border-radius: 8px;" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li> -->
+        </div>
+        <div class="logo2">
+          <a href="img/logo/logo.png" data-lightbox="mygallery">
+            <img id="myImg" src="img/logo/logo_nobg.png" style="width: 80%;" />
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/profile.php?id=100050686239495" target="_blank"><i
+            class='bx bxl-facebook'></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100050686239495" target="_blank"><i
+            class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/paul_martin.27/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://www.youtube.com/@paulmartin1816" target="_blank"><i
+            class='bx bxl-youtube'></i></a>
+      </div>
+
+    </div>
+
+    <div class="contact-form">
+      <form action="mailto:pm8470403@gmail.com" method="post">
+        <input type="text" id="nume" name="nume" placeholder="Numele tău..." required>
+        <input type="text" id="prenume" name="prenume" placeholder="Prenumele tău..." required>
+        <input type="email" id="email" name="email" placeholder="Adresa ta de email..." required>
+        <input type="text" id="telefon" name="telefon" placeholder="Numărul tău de telefon..." required>
+        <textarea name="message" id="mesaj" name="mesaj" cols="30" rows="10" placeholder="Scrie un mesaj..."></textarea>
+        <input type="submit" value="Trimite mesajul" class="submit" onclick="sendEmail(event)" required>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- final design-->
+  <section class="end">
+    <div class="last-text">
+      <p>Copyright &copy; 2023 by Paul Martin All rights Reserved.</p>
+    </div>
+    <div class="top">
+      <a href="#acasa"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </section>
+
+  <!--js link -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/send_email.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
