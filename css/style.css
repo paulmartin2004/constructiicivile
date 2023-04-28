@@ -739,3 +739,37 @@ form textarea {
 	}
 
 }
+@media(max-width: 450px) {
+	.layer h5 {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 7px;
+	}
+	
+	.layer h4 {
+		font-size: 13px;
+		font-weight: 600;
+		margin-bottom: 14px;
+	}
+	
+	.layer p {
+		color: var(--second-color);
+		font-size: 0.7rem;
+		line-height: 1.4;
+	}
+	
+	.layer i {
+		color: var(--main-color);
+		margin-top: 7px;
+		font-size: 14px;
+		background: var(--text-color);
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+}
