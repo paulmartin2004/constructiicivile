@@ -253,6 +253,33 @@ header.sticky {
 	margin-top: 5rem;
 }
 
+.photos {
+	background: var(--second-bg-color);
+}
+
+.photos-text h2 {
+	font-size: var(--h2-font);
+	line-height: 2;
+	text-align: center;
+}
+
+.photos-text h4 {
+	color: var(--text-color);
+	margin: 18px 0;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.photos-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 30px;
+	text-align: justify;
+	text-indent: 30px;
+}
+
 .box {
 	background: var(--bg-color);
 	padding: 35px 35px;
